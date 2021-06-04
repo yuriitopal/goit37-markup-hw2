@@ -1,7 +1,9 @@
 :root {
   --main-font: "Roboto", sans-serif;
   --secondary-font: "Raleway", sans-serif;
-  --accent-color: ;
+  --accent-color: #2196f3;
+  --dominant-text-color: #212121;
+  --contacts-link-color: #757575;
 }
 
 .list {
@@ -9,11 +11,24 @@
 }
 .link {
   text-decoration: none;
+  color: #212121;
 }
 body {
   font-family: var(--main-font);
+  color: var(--dominant-text-color);
 }
+/* =======COMPONENTS======= */
+.action :hover,
+.action :focus,
+.action :active {
+  color: var(--accent-color);
+}
+.contacts-link {
+  color: var(--contacts-link-color);
+}
+/* =======END COMPONENTS======= */
 
+/* =======HEADER======= */
 .logo-text {
   font-family: Raleway;
   font-style: normal;
@@ -26,3 +41,27 @@ body {
 
   color: #2196f3;
 }
+.menu-list-item {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.contacts-list {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+
+/* =======END HEADER======= */
+
+/* =======HERO======= */
+
+/* =======END HERO======= */
+
+/* =======FOOTER======= */
+/* =======END FOOTER======= */
